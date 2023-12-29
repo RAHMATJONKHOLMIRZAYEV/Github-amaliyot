@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chiroqlar</title>
+    <style>
+    .menu_1
+    {
+        display: flex;
+        margin-top: 250px;
+        margin-left: 380px;
+    }
+    .box {
+      margin-left: 10px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+      position: relative;
+      animation: mov 1s infinite alternate;
+    }
+    @keyframes mov {
+      0% {
+        background-color: maroon;
+      }
+      25%
+      {
+        background-color: yellow;
+      }
+      50%
+      {
+        background-color: green;
+      }
+      75%
+      {
+        background-color: orange;
+     
+      }
+      100%{
+        background-color: magenta;
+     
+      }
+    } 
+    .aning{
+      margin-left: 10px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+      position: relative;
+      animation: mose 1s infinite alternate;
+    }
+    @keyframes mose {
+      0% {
+        background-color: magenta;
+      }
+      25%
+      {
+        background-color: orange;
+      }
+      50%
+      {
+        background-color: green;
+      }
+      75%
+      {
+        background-color: yellow;
+     
+      }
+      100%{
+        background-color: maroon;
+     
+      }
+    } 
+    
+    .morning
+    {
+      margin-left: 10px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+      position: relative;
+      animation: mute 1s infinite alternate;
+    }
+    @keyframes mute {
+      0% {
+        background-color: khaki;
+      }
+      25%
+      {
+        background-color: saddlebrown;
+      }
+      50%
+      {
+        background-color: aqua;
+      }
+      75%
+      {
+        background-color: olive;
+     
+      }
+      100%{
+        background-color: purple;
+     
+      }
+    } 
+    
+    .exe
+    {
+      margin-left: 10px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+      position: relative;
+      animation: muteme 1s infinite alternate;
+    }
+    @keyframes muteme {
+      0% {
+        background-color: royalblue;
+      }
+      25%
+      {
+        background-color: indianred;
+      }
+      50%
+      {
+        background-color: purple;
+      }
+      75%
+      {
+        background-color: gold;
+     
+      }
+      100%{
+        background-color: darkred;
+     
+      }
+    } 
+    
+    .new
+    {
+      margin-left: 10px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+      position: relative;
+      animation: move 1s infinite alternate;
+    }
+    @keyframes move {
+      0% {
+        background-color: red;
+      }
+      25%
+      {
+        background-color: blue;
+      }
+      50%
+      {
+        background-color: red;
+      }
+      75%
+      {
+        background-color: blue;
+     
+      }
+      100%{
+        background-color: red;
+     
+      }
+    } 
+    
+    .vomen
+    {
+      margin-left: 10px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+      position: relative;
+      animation: move 1s infinite alternate;
+    }
+    @keyframes move {
+      0% {
+        background-color: red;
+      }
+      25%
+      {
+        background-color: blue;
+      }
+      50%
+      {
+        background-color: red;
+      }
+      75%
+      {
+        background-color: blue;
+     
+      }
+      100%{
+        background-color: red;
+     
+      }
+    } 
+    
+    .else
+    {
+      margin-left: 10px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+      position: relative;
+      animation: move 1s infinite alternate;
+    }
+    @keyframes move {
+      0% {
+        background-color: red;
+      }
+      25%
+      {
+        background-color: blue;
+      }
+      50%
+      {
+        background-color: red;
+      }
+      75%
+      {
+        background-color: blue;
+     
+      }
+      100%{
+        background-color: red;
+     
+      }
+    } 
+    
+    .ese
+    {
+      margin-left: 10px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+      position: relative;
+      animation: move 1s infinite alternate;
+    }
+    @keyframes move {
+      0% {
+        background-color: red;
+      }
+      25%
+      {
+        background-color: blue;
+      }
+      50%
+      {
+        background-color: red;
+      }
+      75%
+      {
+        background-color: blue;
+     
+      }
+      100%{
+        background-color: red;
+     
+      }
+    } 
+    
+    </style>
+</head>
+<body>
+<div class="menu_1">
+    <div class="box"></div>
+    <div class="aning"></div>
+    <div class="morning"></div>
+    <div class="exe"></div>
+    <div class="new"></div>
+    <div class="vomen"></div>
+    <div class="else"></div>
+    <div class="ese"></div>
+</div>
+<script>
+    const box = document.getElementById("box");
+    let x = 0;
+    let y = 0;
+    let speedX = 3;
+    let speedY = 5;
+
+    function updatePosition() {
+      x += speedX;
+      y += speedY;
+      box.style.left = x + "px";
+      box.style.top = y + "px";
+
+      if (x <= 0 || x >= window.innerWidth - 50) {
+        speedX *= -1;
+      }
+      if (y <= 0 || y >= window.innerHeight - 50) {
+        speedY *= -1;
+      }
+
+      requestAnimationFrame(updatePosition);
+    }
+
+    updatePosition();
+  </script>
+</body>
+</html>

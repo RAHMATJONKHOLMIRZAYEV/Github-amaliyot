@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #ball {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      border-radius: 50%;
+      position: absolute;
+      animation: move 2s infinite alternate;
+    }
+    @keyframes move {
+      0% {
+        background-color: red;
+        width: 120px;
+        height: 120px;
+      }
+      25%
+      {
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        
+      }
+      50%
+      {
+        background-color: orangered;
+        width: 120px;
+        height: 120px;
+      }
+      75%
+      {
+        background-color: lawngreen;
+        width: 100px;
+        height: 100px;
+     
+      }
+      100%{
+        background-color: silver;
+        width: 120px;
+        height: 120px;
+     }
+    } 
+    
+  </style>
+</head>
+<body>
+  <div id="ball"></div>
+
+  <script>
+    const ball = document.getElementById("ball");
+    let x = 0;
+    let y = 0;
+    let speedX = 3;
+    let speedY = 5;
+
+    function updatePosition() {
+      x += speedX;
+      y += speedY;
+      ball.style.left = x + "px";
+      ball.style.top = y + "px";
+
+      if (x <= 0 || x >= window.innerWidth - 50) {
+        speedX *= -1;
+      }
+      if (y <= 0 || y >= window.innerHeight - 50) {
+        speedY *= -1;
+      }
+
+      requestAnimationFrame(updatePosition);
+    }
+
+    updatePosition();
+  </script>
+</body>
+</html>

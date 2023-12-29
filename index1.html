@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .flex
+    {
+      display: flex;
+      margin-top: 200px;
+      margin-left: 220px;
+    }
+    .box {
+      border-bottom-left-radius: 30px;
+      border-top-left-radius: 30px;
+      margin-left: 200px;
+      width: 200px;
+      height: 50px;
+      background-color: blue;
+      position: relative;
+      animation: move 1s infinite alternate;
+    }
+    @keyframes move {
+      0% {
+        background-color: red;
+      }
+      25%
+      {
+        background-color: blue;
+      }
+      50%
+      {
+        background-color: red;
+      }
+      75%
+      {
+        background-color: blue;
+     
+      }
+      100%{
+        background-color: red;
+     
+      }
+    } 
+    .more{
+      border-bottom-right-radius: 30px;
+      border-top-right-radius: 30px;
+      margin-left: 10px;
+      width: 200px;
+      height: 50px;
+      background-color: red;
+      position: relative;
+      animation: more 1s infinite alternate;
+    }
+    @keyframes more {
+      0% {
+        background-color: blue;
+      }
+      25%
+      {
+        background-color: red;
+      }
+      50%
+      {
+        background-color: blue;
+      }
+      75%
+      {
+        background-color: red;
+     
+      }
+      100%{
+        background-color: blue;
+     
+      }
+    } 
+    
+  </style>
+</head>
+<body>
+<div class="flex">
+  <div class="box"></div>
+  <div class="more"></div>
+</div>
+</body>
+</html>
